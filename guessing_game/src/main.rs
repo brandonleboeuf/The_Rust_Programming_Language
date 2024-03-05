@@ -17,7 +17,7 @@ fn main() {
             .expect("Failed to read line");
 
         // // Check if the user wants to crash the program by typing any letter
-        if guess.trim().len() == 1 && guess.trim().chars().next().unwrap().is_alphabetic() {
+        if guess.trim().len() >= 1 && guess.trim().chars().next().unwrap().is_alphabetic() {
             panic!("That's no number, lil Chudd... You need to leave...!");
         }
 
